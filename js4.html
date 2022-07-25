@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Area and Perimeter of a circle</title>
+  </head>
+  <body>
+    <h1>Area of the circle</h1>
+    <p id="b"></p>
+    <script>
+    function circle(radius)
+{
+    this.radius = radius;
+  // area method
+    this.area = function () 
+    {
+        return Math.PI * this.radius * this.radius;
+    };
+}
+var c = new circle(3);
+let a=c.area().toFixed(2);
+document.getElementById("b").innerHTML="The area of the circle is : "+a;
+
+
+</script>
+</body>
+  </html>
